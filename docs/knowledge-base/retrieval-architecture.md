@@ -87,3 +87,29 @@ These are design budgets, not measured performance.
 
 ## 11. Evaluation metrics
 Recall@5, Precision@5, MRR, nDCG, retrieval p50/p95 latency, no-result rate, stale-document rate and grounded-answer accuracy.
+
+## 12. Mandatory retrieval safety controls
+
+### Approved knowledge only
+- Retrieve only entries with status = Approved.
+- Exclude draft, rejected, suspended and expired entries.
+- Check effective_date and expiry_date before returning results.
+- Never expose draft knowledge-base content in customer-facing responses.
+
+### Authentication and authorization
+- Apply authentication-level filtering before dense and sparse retrieval.
+- Recheck authorization after fusion and reranking.
+- Enforce least-privilege access.
+- Never expose restricted account or transaction information to unauthorized customers.
+
+### Regulatory source verification
+Every regulatory knowledge entry must maintain:
+- Official regulator source URL
+- Circular or reference number
+- Publication date
+- Last verified date
+- Verification status
+- Effective date, where applicable
+
+Unverified regulatory content must not be presented as confirmed regulatory guidance.
+
