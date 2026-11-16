@@ -28,3 +28,13 @@
 - Design decision: card management is represented as a secondary group under the transaction primary category while retaining CRD identifiers.
 - Open work: create at least 10 sample utterances per intent and validate the confidence thresholds against a labelled dataset.
 - Next: build the utterance library and NLU evaluation scenarios.
+
+## Day 04 – Security and Guardrails
+
+- Added financial advice and account security guardrail specification.
+- Documented regulatory compliance controls and six adversarial attack vectors.
+- Created 60 adversarial test cases across six attack categories.
+- Added false-positive analysis with 10 legitimate-request scenarios.
+- Documented safety monitoring, audit logging, dashboards and incident response.
+- Defined fail-closed behaviour for security-critical failures.
+
