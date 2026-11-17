@@ -50,3 +50,14 @@
 - Added synthetic feedback events and an illustrative CSAT +0.3 boss-challenge simulation.
 - Clarified that model training and live safety evaluation have not yet been performed.
 
+
+## 2026-11-17 - Day 06: NLU Pipeline Finalisation and Evaluation
+
+- Finalised the 35-intent taxonomy and reused the existing 350-example utterance library.
+- Preserved the held-out test split and generated 105 held-out NLU evaluation examples.
+- Added targeted tests for all six overlapping-intent pairs, multi-intent requests, out-of-scope messages and seven supported languages.
+- Documented the NLU processing sequence, confidence handling, entity validation and evaluation metrics.
+- Added NLU pipeline configuration and test execution instructions.
+- Design decision: ambiguous or intermediate-confidence requests are clarified rather than automatically accepted until confidence thresholds are calibrated.
+- Limitation: evaluation cases are fixtures and have not been executed against a trained classifier.
+- Next: proceed to the next project phase, Knowledge Base and Retrieval Architecture.

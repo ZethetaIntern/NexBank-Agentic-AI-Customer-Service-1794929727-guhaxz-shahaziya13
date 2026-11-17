@@ -1,0 +1,56 @@
+﻿{
+    "version":  "1.0",
+    "taxonomy_version":  "1.0",
+    "intent_count":  35,
+    "hierarchy_levels":  3,
+    "languages":  {
+                      "primary":  [
+                                      "English",
+                                      "Hindi",
+                                      "Hinglish"
+                                  ],
+                      "secondary":  [
+                                        "Tamil",
+                                        "Telugu",
+                                        "Bengali",
+                                        "Marathi",
+                                        "Gujarati"
+                                    ]
+                  },
+    "confidence":  {
+                       "auto_accept_minimum":  0.85,
+                       "minimum_margin":  0.15,
+                       "clarification_threshold":  0.7,
+                       "conservative_handling_for_security_signals":  true,
+                       "unresolved_intermediate_band_action":  "clarify_until_calibrated"
+                   },
+    "multi_intent":  {
+                         "enabled":  true,
+                         "independent_entity_extraction":  true,
+                         "safety_priority_ordering":  true,
+                         "independent_task_state":  true
+                     },
+    "out_of_scope":  {
+                         "enabled":  true,
+                         "fabricate_answers":  false,
+                         "preserve_original_request":  true
+                     },
+    "evaluation":  {
+                       "held_out_test_required":  true,
+                       "report_per_intent_metrics":  true,
+                       "report_language_metrics":  true,
+                       "metrics":  [
+                                       "accuracy",
+                                       "precision",
+                                       "recall",
+                                       "macro_f1",
+                                       "confusion_matrix",
+                                       "entity_precision",
+                                       "entity_recall",
+                                       "slot_completion_rate",
+                                       "clarification_rate",
+                                       "out_of_scope_detection_rate",
+                                       "multi_intent_exact_match_rate"
+                                   ]
+                   }
+}
