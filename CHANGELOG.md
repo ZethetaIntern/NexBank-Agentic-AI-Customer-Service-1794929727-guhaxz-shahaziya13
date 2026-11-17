@@ -61,3 +61,13 @@
 - Design decision: ambiguous or intermediate-confidence requests are clarified rather than automatically accepted until confidence thresholds are calibrated.
 - Limitation: evaluation cases are fixtures and have not been executed against a trained classifier.
 - Next: proceed to the next project phase, Knowledge Base and Retrieval Architecture.
+
+## 2026-11-17 — Day 06: Escalation and Customer Satisfaction
+
+- Added all 15 escalation trigger conditions from the project brief, including priority, queue and SLA.
+- Added escalation decision logic, eight-element handoff context, queue overflow, after-hours handling and de-escalation governance.
+- Created 10 ambiguous escalation test scenarios with expected routing and documented reasoning.
+- Added customer satisfaction collection, CSAT calculation, implicit feedback, bias correction and outcome tracking.
+- Specified real-time, daily and weekly dashboard wireframes.
+- Added machine-readable escalation and satisfaction configuration.
+- Limitation: routing scenarios are test fixtures; automated routing execution and the 9/10 boss challenge have not yet been verified.

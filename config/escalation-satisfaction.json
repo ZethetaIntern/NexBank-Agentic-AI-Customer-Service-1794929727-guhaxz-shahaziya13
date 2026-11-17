@@ -1,0 +1,37 @@
+﻿{
+    "version":  "1.0",
+    "priorities":  {
+                       "P0":  "Critical safety or security",
+                       "P1":  "High-risk or specialist review",
+                       "P2":  "Routine human support or unresolved conversation"
+                   },
+    "handoff_context_elements":  [
+                                     "conversation_and_customer_reference",
+                                     "authentication_status",
+                                     "intents_and_confidence",
+                                     "conversation_summary",
+                                     "validated_masked_entities",
+                                     "actions_completed_or_pending",
+                                     "triggers_and_safety_concerns",
+                                     "requested_action_queue_sla_timestamps"
+                                 ],
+    "customer_satisfaction":  {
+                                  "rating_min":  1,
+                                  "rating_max":  5,
+                                  "target_average":  4.5,
+                                  "first_contact_resolution_target":  0.7,
+                                  "containment_target":  0.7,
+                                  "escalation_rate_target_max":  0.3,
+                                  "repeat_contact_windows_days":  [
+                                                                      7,
+                                                                      14,
+                                                                      30
+                                                                  ]
+                              },
+    "escalation_governance":  {
+                                  "p0_may_be_downgraded_by_ai":  false,
+                                  "retain_original_priority_on_overflow":  true,
+                                  "audit_all_routing_decisions":  true,
+                                  "customer_credentials_in_handoff":  false
+                              }
+}
