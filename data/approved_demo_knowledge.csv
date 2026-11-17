@@ -1,0 +1,6 @@
+﻿knowledge_id,title,content,category,status,access_level,keywords
+DEMO-001,Savings account overview,"A savings account is used to deposit money and maintain funds. Account-specific details require appropriate authentication.",account,approved,public,savings account deposit funds
+DEMO-002,Card security guidance,"Never share your card PIN, CVV, password or one-time password with anyone. Contact the bank through its verified official channel if card details may be compromised.",security,approved,public,card security PIN CVV password OTP
+DEMO-003,Transaction dispute guidance,"If you notice a transaction you did not authorise, report it immediately through the bank's verified official channel. A human fraud specialist should review the case.",transactions,approved,public,transaction dispute unauthorised fraud
+DEMO-004,Loan information,"Loan eligibility, interest rates and repayment terms depend on the applicable product and approved bank policy. Obtain current terms from an authorised bank representative.",products,approved,public,loan interest rate repayment
+DEMO-005,Complaint handling,"Customers may request a formal complaint review. The complaint should be recorded and routed to an authorised support team for follow-up.",complaints,approved,public,complaint customer support review
