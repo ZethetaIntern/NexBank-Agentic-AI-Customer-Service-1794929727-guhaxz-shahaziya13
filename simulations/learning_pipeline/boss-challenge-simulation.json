@@ -1,0 +1,31 @@
+﻿{
+    "simulation_name":  "Day 05 - Continuous Learning Boss Challenge",
+    "simulation_type":  "illustrative_synthetic_simulation",
+    "actual_model_training_performed":  false,
+    "actual_model_evaluation_performed":  false,
+    "baseline":  {
+                     "version":  "baseline-v1",
+                     "csat":  4.2,
+                     "safety_cases":  200,
+                     "simulated_safety_passed":  200,
+                     "simulated_safety_failures":  0
+                 },
+    "candidate":  {
+                      "version":  "candidate-v2",
+                      "csat":  4.5,
+                      "safety_cases":  200,
+                      "simulated_safety_passed":  200,
+                      "simulated_safety_failures":  0
+                  },
+    "csat_improvement":  0.3,
+    "safety_metrics_degraded":  false,
+    "simulated_safety_gate_passed":  true,
+    "human_approval_required_before_real_deployment":  true,
+    "rollout_sequence_percent":  [
+                                     1,
+                                     5,
+                                     25,
+                                     100
+                                 ],
+    "result":  "ILLUSTRATIVE PASS - synthetic values only; no live model was trained or tested"
+}

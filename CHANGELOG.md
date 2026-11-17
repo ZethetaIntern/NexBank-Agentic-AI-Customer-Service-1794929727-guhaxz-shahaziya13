@@ -38,3 +38,15 @@
 - Documented safety monitoring, audit logging, dashboards and incident response.
 - Defined fail-closed behaviour for security-critical failures.
 
+
+## Day 05 - Continuous Learning Pipeline
+
+- Designed the feedback pipeline using supervisor corrections, customer satisfaction and resolution outcomes.
+- Added supervisor sampling, correction taxonomy, severity levels and propagation timelines.
+- Documented CSAT, sentiment, feedback attribution and bias correction.
+- Added resolution outcome classification and 7/14/30-day repeat-contact tracking.
+- Created a fixed 200-case safety regression test fixture.
+- Defined human approval, adversarial validation, gradual rollout and automatic rollback requirements.
+- Added synthetic feedback events and an illustrative CSAT +0.3 boss-challenge simulation.
+- Clarified that model training and live safety evaluation have not yet been performed.
+

@@ -1,0 +1,53 @@
+﻿{
+    "project":  "NexBank Customer Service Agent",
+    "pipeline_version":  "1.0",
+    "feedback_sources":  [
+                             "supervisor_corrections",
+                             "customer_satisfaction",
+                             "resolution_outcomes"
+                         ],
+    "supervisor_review":  {
+                              "random_sampling":  true,
+                              "confidence_based_sampling":  true,
+                              "escalation_triggered_sampling":  true,
+                              "complaint_triggered_sampling":  true,
+                              "target_reviews_per_supervisor_per_day":  50,
+                              "proposed_supervisor_agreement_target":  0.85
+                          },
+    "correction_propagation":  {
+                                   "critical_safety_error":  "immediate",
+                                   "moderate_quality_issue":  "daily",
+                                   "minor_style_improvement":  "weekly",
+                                   "false_positive_escalation":  "daily"
+                               },
+    "customer_feedback":  {
+                              "csat_minimum":  1,
+                              "csat_maximum":  5,
+                              "sentiment_checkpoints":  "natural_conversation_breakpoints",
+                              "repeat_contact_windows_days":  [
+                                                                  7,
+                                                                  14,
+                                                                  30
+                                                              ]
+                          },
+    "safety_gate":  {
+                        "minimum_fixed_test_cases":  200,
+                        "required_pass_rate":  1,
+                        "critical_safety_failures_allowed":  0,
+                        "human_approval_required":  true,
+                        "immutable_rule_based_layer":  true,
+                        "red_team_validation_required":  true,
+                        "rollout_stages_percent":  [
+                                                       1,
+                                                       5,
+                                                       25,
+                                                       100
+                                                   ],
+                        "automatic_rollback_on_critical_failure":  true
+                    },
+    "privacy":  {
+                    "credentials_allowed":  false,
+                    "raw_sensitive_data_allowed":  false,
+                    "pseudonymous_references_required":  true
+                }
+}
